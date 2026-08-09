@@ -11,6 +11,19 @@
 
 UTOPIA must operate over both the history attributed to reality and the history of knowledge about reality. Native support is required because reconstructing these histories through ad hoc joins, filters, and application logic will not remain correct or economical at scale.
 
+## Conceptual lineage and typed validity
+
+The 2018 *Time-Based Versioning — Conceptual Overview* design is documented conceptual lineage for this foundation. It separated entity identity from immutable state snapshots, applied temporal intervals to structural and state relationships, and supported latest-state, point-in-time, and interval-history reconstruction. Foundation 0003 preserves those invariants while generalizing them into an assertion-centric, multitemporal knowledge architecture.
+
+This acknowledgment does not adopt the earlier design's cyber-threat-intelligence ontology as universal doctrine:
+
+- identity/state separation is a valid modeling pattern, but the substrate does not require universal `Identity Node` and `State Node` primitives;
+- the earlier `From` and `To` fields describe version or system validity—when a modeled structure or state was created, revised, or deleted—not the duration of the modeled event;
+- an `EOT` or "end of time" sentinel is one possible representation of an unbounded interval, not a logical requirement;
+- destructive latest-only retention is permissible only in rebuildable projections or caches whose lineage resolves to retained authoritative history. The canonical knowledge substrate remains append-oriented.
+
+Implementations must therefore type temporal validity explicitly. They must not silently map a version-validity interval onto reality time, observation time, assertion time, or another temporal axis.
+
 ## More than one time
 
 An incident can involve distinct temporal acts:
