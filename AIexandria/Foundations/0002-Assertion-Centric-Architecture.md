@@ -2,8 +2,27 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft doctrine |
+| Status | Adopted foundation |
 | Classification | Logical architecture |
+| Adopted | 2026-08-09 |
+
+## Section governance
+
+Adoption applies according to the classifications below. It does not freeze candidate facets into a universal schema, treat known challenges as solved, or convert open questions into adopted answers.
+
+| Section | Governance classification |
+|---|---|
+| Doctrine | Adopted doctrine |
+| Why assertion primacy | Adopted doctrine |
+| Conceptual form | Approved architectural guidance |
+| Candidate assertion facets | Approved architectural guidance; not a frozen schema |
+| Identity, assertion, and state | Adopted doctrine |
+| Non-destructive knowledge evolution | Adopted doctrine |
+| Inference requirements | Adopted doctrine |
+| Implications for CTI exchange | Approved interoperability guidance |
+| Challenges | Retained risk register; not solved findings |
+| Open questions | Open research; not adopted answers |
+| Related foundations | Reference material |
 
 ## Doctrine
 
