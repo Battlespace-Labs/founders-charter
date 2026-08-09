@@ -11,6 +11,12 @@
 
 Shared language is architecture. This guide defines a small, human-readable vocabulary for distinguishing edits, decisions, hypotheses, research tasks, and durable doctrine in human–AI collaboration. The notation is intentionally lightweight: prose remains primary, while explicit markers make intent discoverable and [machine-readable](https://en.wikipedia.org/wiki/Machine-readable_data).
 
+Reference linking is governed by
+[Doctrine 0001 — Document-Independent Reference Linking](../../Governance/Doctrine/0001-Document-Independent-Reference-Linking.md).
+That adopted doctrine supersedes the former informal convention of linking only
+the first meaningful occurrence of an unfamiliar term. This draft guide must be
+read consistently with the controlling doctrine.
+
 ## Canonical vocabulary
 
 - **AIexandria** is the canonical literal spelling. Do not silently change it to *Alexandria* or explain the wordplay unless the name itself is under discussion.
