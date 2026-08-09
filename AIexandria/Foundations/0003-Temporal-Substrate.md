@@ -2,8 +2,27 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft doctrine |
+| Status | Adopted foundation |
 | Classification | Computational and logical architecture |
+| Adopted | 2026-08-09 |
+
+## Section governance
+
+Adoption applies according to the classifications below. It does not convert hypotheses into findings, guidance into mandatory physical design, or open questions into adopted answers.
+
+| Section | Governance classification |
+|---|---|
+| Doctrine | Adopted doctrine |
+| Conceptual lineage and typed validity | Adopted interpretive boundary |
+| More than one time | Adopted doctrine |
+| Intervals, uncertainty, and precision | Adopted logical requirements with approved implementation guidance |
+| Required query perspectives | Adopted doctrine |
+| Logical primacy and selective physicalization | Adopted logical requirements with approved implementation guidance |
+| Temporal closure of inference | Adopted doctrine |
+| Immutability and replay | Adopted doctrine, subject to the retained legal-erasure question |
+| Performance hypothesis | Retained hypothesis requiring benchmarks; not doctrine |
+| Open questions | Open research; not adopted answers |
+| Related foundations | Reference material |
 
 ## Doctrine
 
