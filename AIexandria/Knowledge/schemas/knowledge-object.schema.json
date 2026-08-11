@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://battlespace-labs.com/schemas/aiexandria/knowledge-object.schema.json",
+  "title": "AIexandria Knowledge Object",
+  "description": "Minimal common envelope for agent-managed knowledge objects. Domain-specific payloads may be governed by additional schemas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "object_id",
+    "object_type",
+    "title",
+    "summary",
+    "lifecycle",
+    "timestamps",
+    "relationships",
+    "provenance",
+    "human_views",
+    "payload"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^bsl:[a-z0-9][a-z0-9._-]*:[a-z0-9][a-z0-9._-]*$"
+    },
+    "object_type": {
+      "type": "string",
+      "enum": [
+        "idea",
+        "decision",
+        "design",
+        "assertion",
+        "evidence",
+        "experiment",
+        "action",
+        "artifact",
+        "dossier"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "maturity", "authority"],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": ["captured", "working", "adopted", "superseded", "retired"]
+        },
+        "maturity": {
+          "type": "string",
+          "enum": ["raw", "shaped", "developed", "formalized"]
+        },
+        "authority": {
+          "type": "string",
+          "enum": ["agent-maintained", "human-confirmed", "adopted-document"]
+        },
+        "status_note": {
+          "type": "string"
+        }
+      }
+    },
+    "timestamps": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_at", "updated_at"],
+      "properties": {
+        "created_at": {
+          "description": "Creation date or timestamp at the precision supported by the provenance.",
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "updated_at": {
+          "description": "Last-update date or timestamp at the precision supported by the provenance.",
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["relation", "target"],
+        "properties": {
+          "relation": {
+            "type": "string",
+            "enum": [
+              "relates_to",
+              "refines",
+              "supersedes",
+              "derives_from",
+              "renders_as",
+              "governed_by",
+              "distinguishes_from",
+              "depends_on",
+              "evidenced_by",
+              "produces"
+            ]
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_type", "recorded_at", "contribution"],
+        "properties": {
+          "source_type": {
+            "type": "string",
+            "enum": ["conversation", "repository", "file", "url", "agent", "person"]
+          },
+          "recorded_at": {
+            "description": "Source date or timestamp at the precision supported by the provenance.",
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "string",
+                "format": "date-time"
+              }
+            ]
+          },
+          "locator": {
+            "type": "string"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "contribution": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "human_views": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["view_type", "path", "role"],
+        "properties": {
+          "view_type": {
+            "type": "string",
+            "enum": ["dossier", "report", "specification", "decision-record", "presentation"]
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "enum": ["primary", "supporting", "published"]
+          }
+        }
+      }
+    },
+    "payload": {
+      "type": "object"
+    }
+  }
+}
