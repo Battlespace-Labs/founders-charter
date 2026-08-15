@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "object_id": "bsl:idea:ideation-capture",
+  "object_type": "idea",
+  "title": "Ideation Capture",
+  "summary": "An agent-managed capability that captures, preserves, develops, and reconnects ideas from natural human activity without requiring the human to operate schemas or recordkeeping workflows.",
+  "lifecycle": {
+    "state": "working",
+    "maturity": "developed",
+    "authority": "human-confirmed",
+    "status_note": "Purpose and separation from audiobook cognition detection are adopted; implementation details remain open."
+  },
+  "timestamps": {
+    "created_at": "2026-08-04",
+    "updated_at": "2026-08-11"
+  },
+  "relationships": [
+    {
+      "relation": "distinguishes_from",
+      "target": "bsl:idea:audiobook-cognition-detection",
+      "note": "Ideation Capture is independent of sleep state; the audiobook application is a separate concept to be memorialized through this capability."
+    },
+    {
+      "relation": "governed_by",
+      "target": "Governance/Doctrine/0002-Human-Centered-Knowledge-Workflow.md"
+    },
+    {
+      "relation": "renders_as",
+      "target": "AIexandria/Dossiers/Ideation-Capture.md"
+    },
+    {
+      "relation": "relates_to",
+      "target": "bsl:architecture:session-continuity-object",
+      "note": "Session Continuity Objects can transport working state but do not own this concept's domain truth."
+    },
+    {
+      "relation": "relates_to",
+      "target": "bsl:view:cassandra",
+      "note": "Cassandra may render chronological and interpretive views from captured activity."
+    }
+  ],
+  "provenance": [
+    {
+      "source_type": "conversation",
+      "recorded_at": "2026-08-04",
+      "actor": "Patrick Maroney",
+      "contribution": "Separated Ideation Capture from the Apple Watch-enabled audiobook cognition/sleep-detection application and directed that the first be used to memorialize the second."
+    },
+    {
+      "source_type": "conversation",
+      "recorded_at": "2026-08-11",
+      "actor": "Patrick Maroney",
+      "contribution": "Directed a workflow reset that preserves schemas as an agent-managed abstraction layer while making rich human-facing documents the normal interface."
+    },
+    {
+      "source_type": "repository",
+      "recorded_at": "2026-08-11",
+      "locator": "Governance/Doctrine/0002-Human-Centered-Knowledge-Workflow.md",
+      "contribution": "Provides the governing workflow and authority boundaries for this object and its dossier."
+    }
+  ],
+  "human_views": [
+    {
+      "view_type": "dossier",
+      "path": "AIexandria/Dossiers/Ideation-Capture.md",
+      "role": "primary"
+    }
+  ],
+  "payload": {
+    "intent": "Make idea capture effortless for the human while preserving enough structure, provenance, and continuity for agents to develop ideas reliably across sessions, devices, models, and tools.",
+    "scope": {
+      "included": [
+        "Natural-language conversation",
+        "Spoken notes and transcripts",
+        "Documents, links, images, whiteboards, and journal pages",
+        "Identity resolution and relationship discovery",
+        "Progressive enrichment, dossier rendering, and migrate-on-touch reconciliation"
+      ],
+      "excluded": [
+        "Sleep-state or cognition-loss detection",
+        "Audiobook playback control",
+        "Automatic adoption of doctrine or consequential decisions",
+        "Requiring humans to author or maintain JSON"
+      ]
+    },
+    "operating_model": [
+      "Capture the contribution and its provenance.",
+      "Resolve whether it extends an existing concept identity.",
+      "Apply the minimum useful structure for its maturity.",
+      "Update relationships, lifecycle, and open questions.",
+      "Render or update the primary human-facing dossier.",
+      "Request confirmation only for consequential changes."
+    ],
+    "confirmation_required_for": [
+      "Adoption of doctrine or a material decision",
+      "Retirement or destructive replacement",
+      "Material change to scope, meaning, ownership, or authority",
+      "Resolution of a genuine ambiguity between competing concept identities"
+    ],
+    "expected_outputs": [
+      "One durable concept identity",
+      "A coherent human-facing dossier",
+      "Traceable decisions, assertions, evidence, questions, and actions",
+      "Specialized reports, specifications, presentations, or implementation artifacts when warranted"
+    ],
+    "open_questions": [
+      "Which capture channels should be implemented first after conversation and files?",
+      "What confidence threshold allows automatic concept matching without human interruption?",
+      "Which dossier edits can be reconciled automatically into the substrate?",
+      "Where should operational knowledge objects reside when this pilot outgrows the founders-charter repository?"
+    ]
+  }
+}

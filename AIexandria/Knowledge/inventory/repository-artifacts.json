@@ -1,0 +1,172 @@
+{
+  "inventory_id": "bsl:artifact-inventory:founders-charter",
+  "as_of": "2026-08-11",
+  "repository": "Battlespace-Labs/founders-charter",
+  "scope": "Authoritative and current artifacts in the founders-charter repository plus known unresolved knowledge-workflow artifacts from prior collaboration.",
+  "classification_values": [
+    "authoritative",
+    "current",
+    "source_material",
+    "duplicate",
+    "superseded",
+    "unresolved"
+  ],
+  "entries": [
+    {
+      "artifact_id": "bsl:artifact:repository-readme",
+      "title": "Repository README",
+      "kind": "navigation",
+      "location": "README.md",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:foundation:0000",
+      "title": "Collaboration Language and Style Guide",
+      "kind": "foundation",
+      "location": "AIexandria/Foundations/0000-Collaboration-Language-and-Style-Guide.md",
+      "classification": "current",
+      "note": "Draft; remains the current collaboration-language proposal."
+    },
+    {
+      "artifact_id": "bsl:foundation:0001",
+      "title": "No One Ring",
+      "kind": "foundation",
+      "location": "AIexandria/Foundations/0001-No-One-Ring.md",
+      "classification": "current",
+      "note": "Draft doctrine; current expression of the composable-systems principle."
+    },
+    {
+      "artifact_id": "bsl:foundation:0002",
+      "title": "Assertion-Centric Architecture",
+      "kind": "foundation",
+      "location": "AIexandria/Foundations/0002-Assertion-Centric-Architecture.md",
+      "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:foundation:0003",
+      "title": "Temporal Substrate",
+      "kind": "foundation",
+      "location": "AIexandria/Foundations/0003-Temporal-Substrate.md",
+      "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:foundation:0004",
+      "title": "Universe of Reality and Knowledge",
+      "kind": "foundation",
+      "location": "AIexandria/Foundations/0004-Universe-of-Reality-and-Knowledge.md",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:foundation:0005",
+      "title": "Research Roadmap",
+      "kind": "foundation",
+      "location": "AIexandria/Foundations/0005-Research-Roadmap.md",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:doctrine:0001",
+      "title": "Document-Independent Reference Linking",
+      "kind": "doctrine",
+      "location": "Governance/Doctrine/0001-Document-Independent-Reference-Linking.md",
+      "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:doctrine:0002",
+      "title": "Human-Centered Knowledge Workflow",
+      "kind": "doctrine",
+      "location": "Governance/Doctrine/0002-Human-Centered-Knowledge-Workflow.md",
+      "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:artifact:certificate-of-formation",
+      "title": "Battlespace Labs LLC Certificate of Formation",
+      "kind": "legal-record",
+      "location": "Governance/Formation/CertificateOfFormation.pdf",
+      "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:artifact:knowledge-workflow-readme",
+      "title": "AIexandria Knowledge Workflow",
+      "kind": "operating-guide",
+      "location": "AIexandria/Knowledge/README.md",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:schema:knowledge-object-1.0.0",
+      "title": "AIexandria Knowledge Object Schema",
+      "kind": "schema",
+      "location": "AIexandria/Knowledge/schemas/knowledge-object.schema.json",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:idea:ideation-capture",
+      "title": "Ideation Capture knowledge object",
+      "kind": "knowledge-object",
+      "location": "AIexandria/Knowledge/objects/ideas/ideation-capture.json",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:dossier:ideation-capture",
+      "title": "Ideation Capture Project Dossier",
+      "kind": "dossier",
+      "location": "AIexandria/Dossiers/Ideation-Capture.md",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:artifact-inventory:founders-charter",
+      "title": "Founders Charter Repository Artifact Inventory",
+      "kind": "inventory",
+      "location": "AIexandria/Knowledge/inventory/repository-artifacts.json",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:artifact-family:prior-ideation-package",
+      "title": "Prior Ideation Capture schema and JSON artifact package",
+      "kind": "artifact-family",
+      "location": null,
+      "classification": "unresolved",
+      "note": "Known from prior collaboration; authoritative repository copy has not been located. Preserve and reconcile on touch rather than silently recreating or discarding it."
+    },
+    {
+      "artifact_id": "bsl:architecture:session-continuity-object",
+      "title": "Session Continuity Object specification",
+      "kind": "specification",
+      "location": null,
+      "classification": "unresolved",
+      "known_filename": "session-continuity-object.md",
+      "note": "A prior file is known, but its authoritative repository location remains unresolved."
+    },
+    {
+      "artifact_id": "bsl:schema:session-continuity-object",
+      "title": "Session Continuity Object schema",
+      "kind": "schema",
+      "location": null,
+      "classification": "unresolved",
+      "known_filename": "session-continuity-object.schema.json"
+    },
+    {
+      "artifact_id": "bsl:example:session-continuity-object-design",
+      "title": "AIexandria Session Continuity Object design example",
+      "kind": "example",
+      "location": null,
+      "classification": "unresolved",
+      "known_filename": "SCO-AIexandria-SCO-design-example.json"
+    },
+    {
+      "artifact_id": "bsl:view:cassandra",
+      "title": "Cassandra",
+      "kind": "generated-journal-view",
+      "location": null,
+      "classification": "unresolved",
+      "note": "Retained as the intended chronological and interpretive view; no authoritative durable artifact was located in this repository."
+    },
+    {
+      "artifact_id": "bsl:source:historical-collaboration",
+      "title": "Historical Battlespace Labs and AIexandria conversations",
+      "kind": "source-corpus",
+      "location": null,
+      "classification": "source_material",
+      "note": "Preserve as provenance and migrate subjects on touch; do not claim wholesale conversion."
+    }
+  ]
+}
