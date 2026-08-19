@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://battlespace-labs.com/schemas/ai-export-manifest.schema.json",
+  "title": "AI Discourse Export Manifest",
+  "description": "Non-secret provenance and integrity metadata for an AI provider export or session capture.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_id",
+    "provider",
+    "account_scope",
+    "capture_kind",
+    "requested_at",
+    "acquired_at",
+    "source_file",
+    "size_bytes",
+    "sha256",
+    "storage_class",
+    "coverage_status"
+  ],
+  "properties": {
+    "manifest_id": { "type": "string", "minLength": 1 },
+    "provider": {
+      "type": "string",
+      "enum": ["chatgpt", "claude", "github", "github-copilot", "claude-code", "codex-work", "other"]
+    },
+    "account_scope": {
+      "type": "string",
+      "description": "Non-secret account or workspace label."
+    },
+    "capture_kind": {
+      "type": "string",
+      "enum": ["provider-export", "account-archive", "session-capture", "repository-native-record", "other"]
+    },
+    "requested_at": { "type": "string", "format": "date-time" },
+    "acquired_at": { "type": "string", "format": "date-time" },
+    "source_file": { "type": "string", "minLength": 1 },
+    "size_bytes": { "type": "integer", "minimum": 0 },
+    "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+    "provider_export_version": { "type": ["string", "null"] },
+    "storage_class": {
+      "type": "string",
+      "enum": ["raw-archive", "restricted-enclave", "normalized-derivative", "repository-safe-derivative"]
+    },
+    "coverage_status": {
+      "type": "string",
+      "enum": ["complete", "partial", "unknown", "failed"]
+    },
+    "coverage_notes": { "type": "array", "items": { "type": "string" } },
+    "secret_scan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "scanner", "scanned_at"],
+      "properties": {
+        "status": { "type": "string", "enum": ["not-run", "clear", "findings", "indeterminate"] },
+        "scanner": { "type": "string" },
+        "scanned_at": { "type": "string", "format": "date-time" },
+        "report_id": { "type": ["string", "null"] }
+      }
+    },
+    "source_manifest_id": { "type": ["string", "null"] },
+    "supersedes_manifest_id": { "type": ["string", "null"] },
+    "derived_artifact_ids": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

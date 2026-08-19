@@ -1,0 +1,16 @@
+# Raw AI-provider exports and private review material never belong in Git.
+/raw-exports/
+/AI-Exports/
+/private-review/
+
+# Common ChatGPT export components if accidentally placed at repository root.
+/chat.html
+/conversations-*.json
+/conversation_asset_file_names.json
+/library_files.json
+/message_feedback.json
+/shared_conversations.json
+/user.json
+/user_settings.json
+/file*.dat
+/*ChatGPT-Corpus*.zip

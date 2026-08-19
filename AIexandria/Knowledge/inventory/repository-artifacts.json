@@ -1,6 +1,6 @@
 {
   "inventory_id": "bsl:artifact-inventory:founders-charter",
-  "as_of": "2026-08-11",
+  "as_of": "2026-08-17",
   "repository": "Battlespace-Labs/founders-charter",
   "scope": "Authoritative and current artifacts in the founders-charter repository plus known unresolved knowledge-workflow artifacts from prior collaboration.",
   "classification_values": [
@@ -76,6 +76,41 @@
       "kind": "doctrine",
       "location": "Governance/Doctrine/0002-Human-Centered-Knowledge-Workflow.md",
       "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:doctrine:0003",
+      "title": "Preservation Precedes Interpretation",
+      "kind": "doctrine",
+      "location": "Governance/Doctrine/0003-Preservation-Precedes-Interpretation.md",
+      "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:policy:ai-discourse-retention",
+      "title": "AI Discourse Retention and Repository Boundaries",
+      "kind": "policy",
+      "location": "Governance/Policies/AI-Discourse-Retention-and-Repository-Boundaries.md",
+      "classification": "authoritative"
+    },
+    {
+      "artifact_id": "bsl:runbook:monthly-ai-discourse-preservation",
+      "title": "Monthly AI Discourse Preservation Runbook",
+      "kind": "runbook",
+      "location": "AIexandria/Runbooks/Monthly-AI-Discourse-Preservation.md",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:prompts:ai-discourse-review-cleansing",
+      "title": "AI Discourse Review and Cleansing Prompts",
+      "kind": "prompt-set",
+      "location": "AIexandria/Prompts/AI-Discourse-Review-and-Cleansing.md",
+      "classification": "current"
+    },
+    {
+      "artifact_id": "bsl:schema:ai-export-manifest-1.0",
+      "title": "AI Discourse Export Manifest Schema",
+      "kind": "schema",
+      "location": "AIexandria/Knowledge/schemas/ai-export-manifest.schema.json",
+      "classification": "current"
     },
     {
       "artifact_id": "bsl:artifact:certificate-of-formation",
