@@ -5,7 +5,7 @@
 | Status | Working design; purpose and scope separation confirmed |
 | Durable identity | `bsl:idea:ideation-capture` |
 | Primary owner | Patrick Maroney / Battlespace Labs |
-| Last integrated | 2026-08-11 |
+| Last integrated | 2026-08-19 |
 | Governing workflow | [Doctrine 0002 — Human-Centered Knowledge Workflow](../../Governance/Doctrine/0002-Human-Centered-Knowledge-Workflow.md) |
 | Machine record | [Ideation Capture knowledge object](../Knowledge/objects/ideas/ideation-capture.json) |
 
@@ -23,6 +23,13 @@ support. The correction is not to abandon structure. It is to place structure
 at the proper abstraction layer.
 
 > Capture should feel effortless; structure should remain rigorous.
+
+This is the Ideation Capture expression of the
+[Invisible Machinery Principle](../../Governance/Doctrine/0002-Human-Centered-Knowledge-Workflow.md#invisible-machinery-principle):
+“You supply the ideas; the machinery should increasingly disappear underneath
+us.” Pat approves consequences, not mechanics. The agent-managed substrate
+remains inspectable, provenance-aware, validated, and recoverable even as its
+routine operation recedes from the human experience.
 
 ## Scope boundary
 
@@ -147,6 +154,7 @@ recreated or discarded.
 | 2026-08-11 | Keep schemas and structured objects, but move their operation behind the human interface | Structure is valuable; manual schema operation was overwhelming the work |
 | 2026-08-11 | Use rich dossiers as the primary human reading surface | A subject should be understandable without reconstructing scattered machine records |
 | 2026-08-11 | Preserve and migrate on touch | Avoids both information loss and a disruptive all-at-once conversion |
+| 2026-08-19 | Name the Invisible Machinery Principle and preserve “Pat approves consequences, not mechanics” | Makes the intended division of labor explicit while retaining inspectability, provenance, validation, and recovery |
 
 ## Pilot acceptance criteria
 
@@ -180,8 +188,8 @@ The pilot succeeds when:
 
 ## Lineage note
 
-This dossier integrates the August 4 and August 11, 2026 decisions. It does not
-claim to be a wholesale migration of prior conversations. The
+This dossier integrates the August 4, August 11, and August 19, 2026 decisions.
+It does not claim to be a wholesale migration of prior conversations. The
 [artifact inventory](../Knowledge/inventory/repository-artifacts.json) records
 what is authoritative here and what remains unresolved so future work can
 extend the concept without erasing its history.
