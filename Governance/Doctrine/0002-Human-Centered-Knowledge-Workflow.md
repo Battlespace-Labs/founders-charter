@@ -4,6 +4,7 @@
 | --- | --- |
 | Status | Adopted doctrine |
 | Adopted | 2026-08-11 |
+| Refined | 2026-08-19 — Invisible Machinery Principle |
 | Scope | Battlespace Labs and AIexandria knowledge capture, management, and presentation |
 | Implements | Knowledge workflow reset directed 2026-08-11 |
 | Related | [AIexandria Foundation 0000 — Collaboration Language and Style Guide](../../AIexandria/Foundations/0000-Collaboration-Language-and-Style-Guide.md) |
@@ -50,6 +51,28 @@ reasoning—not to impose clerical work on the human collaborator.
 8. **Migration occurs on touch.** Existing material is preserved, inventoried,
    and reconciled when its subject is next used. Useful work does not wait for a
    wholesale historical conversion.
+
+## Invisible Machinery Principle
+
+> You supply the ideas; the machinery should increasingly disappear underneath
+> us.
+
+Pat approves consequences, not mechanics. Once an objective and its boundaries
+are authorized, agents should handle routine capture, classification,
+cross-linking, validation, reconciliation, preservation, and review mechanics
+without transferring their operational burden back to Pat. Human attention is
+reserved for meaning, judgment, correction, and consequential choices.
+
+Invisible does not mean opaque. The underlying machinery must remain rigorous,
+inspectable, provenance-aware, and recoverable. Its work should leave enough
+evidence and lineage to explain what happened, validate the result, correct an
+error, or restore prior state. What disappears is routine complexity at the
+human interface—not accountability or control.
+
+This principle names and reconciles operating principles 3, 4, 6, and 7:
+formalization remains proportional; agents maintain the substrate; humans
+confirm consequences; and lineage remains mandatory without becoming human
+bureaucracy.
 
 ## Two-layer model
 

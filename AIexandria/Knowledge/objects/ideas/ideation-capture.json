@@ -12,7 +12,7 @@
   },
   "timestamps": {
     "created_at": "2026-08-04",
-    "updated_at": "2026-08-11"
+    "updated_at": "2026-08-19"
   },
   "relationships": [
     {
@@ -57,6 +57,12 @@
       "recorded_at": "2026-08-11",
       "locator": "Governance/Doctrine/0002-Human-Centered-Knowledge-Workflow.md",
       "contribution": "Provides the governing workflow and authority boundaries for this object and its dossier."
+    },
+    {
+      "source_type": "conversation",
+      "recorded_at": "2026-08-19",
+      "actor": "Patrick Maroney",
+      "contribution": "Named the Invisible Machinery Principle: 'You supply the ideas; the machinery should increasingly disappear underneath us.' Preserved the associated rule that Pat approves consequences, not mechanics, while requiring the underlying machinery to remain rigorous, inspectable, provenance-aware, and recoverable."
     }
   ],
   "human_views": [
@@ -89,6 +95,7 @@
       "Apply the minimum useful structure for its maturity.",
       "Update relationships, lifecycle, and open questions.",
       "Render or update the primary human-facing dossier.",
+      "Keep routine mechanics out of the human interface while preserving inspectable evidence, provenance, validation, and recovery paths.",
       "Request confirmation only for consequential changes."
     ],
     "confirmation_required_for": [
